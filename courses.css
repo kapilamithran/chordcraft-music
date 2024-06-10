@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(71, 252, 180);
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    background: linear-gradient(135deg, #32ee1a,#36f6b3);
+
+}
+
+
+#logo {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 10px; /* Adjust margin to create space between logo and cc */
+}
+
+#cc {
+    color: #000000;
+    font-family: "Andale Mono", monospace; /* Using Papyrus with fallbacks */
+    font-style: italic; /* Italic style */
+    padding-top: 20px;
+    font-size: 220%;
+    /* text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000; */
+    text-shadow: 
+    3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Navigation {
+    margin-left: auto; /* Push navigation links to the right */
+}
+
+.Navigation a {
+    text-decoration: none;
+    color: #000000;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.Navigation a:hover, .Navigation a.Active {
+    background-color: aquamarine;
+    color: #000000;
+}
+
+.Navigation {
+    margin-right: 20px; /* Add margin to the right of the navigation */
+}
+
+/* sec styles */
+
+.sec{
+    display: flex;
+    position: relative;
+    color: #fff;
+    background-color: black;
+    padding: 50px;
+    height: 150vh;
+}
+
+.text-block, .image-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.text-block{
+    flex: 1;
+    padding: 50px;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.image-block{
+    flex: 1;
+    animation: slideInRight 2s ease-in-out;
+}
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text and Image Animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.sec h2,h3 {
+    
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1.5em;
+    font-family: "Times New Roman", serif; /* Classic serif font */
+    font-style: italic;
+    color: #ddd;
+}
+/* Sec1 Styles */
+.sec1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    height: 150vh;
+}
+
+.sec1 p{
+    font-family: "Times New Roman", serif;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #000000;
+}
+
+.trainer-box {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideInUp 2s ease-in-out;
+    background-image: linear-gradient(to right, #32ee1a, #36f6b3);
+    transition: background-position 0.5s ease, transform 0.3s;
+}
+.trainer-box:hover {
+    background-position: -100% 0;
+    transform: scale(1.05);
+}
+
+.trainer-box:active {
+    transform: scale(0.95);
+}
+
+.trainer-box img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.trainer-box h2,h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.trainer-box p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Trainer Box Hover Effect */
+.trainer-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Trainer Box Animation */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Sec2 Styles */
+.sec2 {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.sec2 h2,h3 {
+    color: #32ee1a;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.sec2 p {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+}
+
+.sec2 a {
+    color: #36f6b3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sec2 a:hover {
+    color: #32ee1a;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.copyright {
+    font-size: 0.5em;
+    color: #bbb;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Additional Animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
