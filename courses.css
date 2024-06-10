@@ -81,7 +81,7 @@ header {
     color: #fff;
     background-color: black;
     padding: 50px;
-    height: 100vh;
+    height: 150vh;
 }
 
 .text-block, .image-block {
@@ -152,6 +152,7 @@ header {
     align-items: center;
     background-color: #fff;
     padding: 50px;
+    height: 150vh;
 }
 
 .sec1 p{
