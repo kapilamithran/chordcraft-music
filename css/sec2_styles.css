@@ -1,0 +1,61 @@
+.sec2 {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden; /* Prevent content from overlapping outside the section */
+}
+
+.sec2 h2,h3 {
+    color: #32ee1a;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.sec2 p {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+}
+
+.sec2 a {
+    color: #36f6b3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sec2 a:hover {
+    color: #32ee1a;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.copyright {
+    font-size: 0.5em;
+    color: #bbb;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Additional Animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

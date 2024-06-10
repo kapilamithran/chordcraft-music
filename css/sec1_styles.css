@@ -1,0 +1,87 @@
+.sec1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    flex-wrap: wrap; /* Ensure flex items wrap to the next line when needed */
+}
+
+.trainer-box {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px; /* Reduced padding */
+    width: 300px; /* Initial width */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideInUp 2s ease-in-out;
+    background-image: linear-gradient(to right, #32ee1a, #36f6b3);
+    transition: background-position 0.5s ease, transform 0.3s;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.trainer-box:hover {
+    background-position: -100% 0;
+    transform: scale(1.05);
+}
+
+.trainer-box:active {
+    transform: scale(0.95);
+}
+
+.trainer-box img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.trainer-box h2,h3 {
+    font-size: 1.3em; /* Reduced font size */
+    margin-bottom: 10px;
+}
+
+.trainer-box p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Trainer Box Hover Effect */
+.trainer-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Trainer Box Animation */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .sec1 {
+        flex-direction: column; /* Change flex direction to display trainer boxes one below the other */
+        align-items: center; /* Center align trainer boxes */
+    }
+
+    .trainer-box {
+        width: 50%; /* Adjust width for smaller screens */
+        margin-bottom: 40px; /* Increased margin between trainer boxes */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+    .trainer-box {
+        width: 50%; /* Further reduce width for smaller screens */
+        margin-bottom: 50px; /* Further increase margin between trainer boxes */
+    }
+}

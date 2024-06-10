@@ -1,0 +1,114 @@
+/* General styles */
+#logo {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 10px;
+}
+
+#cc {
+    color: #000000;
+    font-family: "Andale Mono", monospace;
+    font-style: italic;
+    padding-top: 20px;
+    font-size: 220%;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Navigation a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.Navigation a:hover, .Navigation a.Active {
+    background-color: aquamarine;
+    color: #000000;
+}
+
+.Navigation {
+    margin-right: 20px;
+}
+
+.Home {
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    background-color: rgb(71, 252, 180);
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    background: linear-gradient(135deg, #32ee1a, #36f6b3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #logo {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    #cc {
+        font-size: 180%;
+        padding-top: 10px;
+    }
+
+    .Navigation a {
+        padding: 4px 10px;
+        margin: 0 5px;
+    }
+
+    .Navigation {
+        margin-right: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Home {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    #cc {
+        font-size: 150%;
+        padding-top: 5px;
+    }
+
+    .Navigation a {
+        padding: 3px 8px;
+        margin: 0 3px;
+    }
+
+    .Navigation {
+        margin-right: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Home {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
+    }
+}

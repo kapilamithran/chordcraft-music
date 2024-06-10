@@ -1,0 +1,37 @@
+.sec1 {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    color: #14ff63; /* Text color */
+    background-color: rgb(0, 0, 0); /* Background color */
+    .text-block {
+        flex: 1;
+        transition: all 1.5s ease; /* Transition for the text block */
+        background-color: black; /* Background color */
+        padding: 20px; /* Add padding for better readability */
+        max-width: 80%; /* Limit maximum width */
+        order: 1; /* Order text block to display first */
+        text-align: center;
+        animation: slideInLeft 2s ease-in-out;
+    }
+    
+    .text-block h2 {
+        font-size: 3em;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .text-block p {
+        font-size: 1.5em;
+        font-family: "Times New Roman", serif; /* Classic serif font */
+        font-style: italic;
+        color: white;
+    }
+    
+    
+    
+    }
+    
+.sec1 h2, .sec1 p {
+    color: white; /* Override text color for h2 and p */
+}

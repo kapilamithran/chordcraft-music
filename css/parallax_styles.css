@@ -1,0 +1,39 @@
+.Parallax {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #000000, #473737); /* Light bright green gradient */    
+    overflow: hidden; 
+}
+
+#Title {
+    color: #20e5ff;
+    font-size: 15vh;
+    position: absolute;
+    right: 5%; /* Adjust this value as needed */
+    text-align: right;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .Parallax {
+        display: none; /* Hide the Parallax section for screens <= 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .Parallax {
+        display: none; /* Hide the Parallax section for screens <= 480px */
+    }
+}
